@@ -1,0 +1,167 @@
+[
+  {
+    "timestamp": "2026-04-10T08:30:00",
+    "patient_id": "P001",
+    "patient_name": "John Smith",
+    "prediction": 0,
+    "risk_percentage": 23.5,
+    "confidence": 0.78,
+    "age": 45,
+    "max_heart_rate": 185,
+    "cholesterol": 180
+  },
+  {
+    "timestamp": "2026-04-11T09:15:00",
+    "patient_id": "P001",
+    "patient_name": "John Smith",
+    "prediction": 0,
+    "risk_percentage": 28.2,
+    "confidence": 0.76,
+    "age": 45,
+    "max_heart_rate": 178,
+    "cholesterol": 195
+  },
+  {
+    "timestamp": "2026-04-12T10:45:00",
+    "patient_id": "P001",
+    "patient_name": "John Smith",
+    "prediction": 1,
+    "risk_percentage": 42.8,
+    "confidence": 0.74,
+    "age": 45,
+    "max_heart_rate": 165,
+    "cholesterol": 220
+  },
+  {
+    "timestamp": "2026-04-13T11:20:00",
+    "patient_id": "P001",
+    "patient_name": "John Smith",
+    "prediction": 1,
+    "risk_percentage": 56.3,
+    "confidence": 0.81,
+    "age": 45,
+    "max_heart_rate": 155,
+    "cholesterol": 245
+  },
+  {
+    "timestamp": "2026-04-10T14:00:00",
+    "patient_id": "P002",
+    "patient_name": "Maria Garcia",
+    "prediction": 1,
+    "risk_percentage": 72.1,
+    "confidence": 0.85,
+    "age": 58,
+    "max_heart_rate": 125,
+    "cholesterol": 285
+  },
+  {
+    "timestamp": "2026-04-12T15:30:00",
+    "patient_id": "P002",
+    "patient_name": "Maria Garcia",
+    "prediction": 1,
+    "risk_percentage": 68.4,
+    "confidence": 0.83,
+    "age": 58,
+    "max_heart_rate": 132,
+    "cholesterol": 275
+  },
+  {
+    "timestamp": "2026-04-14T16:45:00",
+    "patient_id": "P002",
+    "patient_name": "Maria Garcia",
+    "prediction": 1,
+    "risk_percentage": 65.7,
+    "confidence": 0.82,
+    "age": 58,
+    "max_heart_rate": 138,
+    "cholesterol": 260
+  },
+  {
+    "timestamp": "2026-04-08T10:00:00",
+    "patient_id": "P003",
+    "patient_name": "Robert Johnson",
+    "prediction": 0,
+    "risk_percentage": 18.3,
+    "confidence": 0.82,
+    "age": 52,
+    "max_heart_rate": 192,
+    "cholesterol": 165
+  },
+  {
+    "timestamp": "2026-04-11T10:30:00",
+    "patient_id": "P003",
+    "patient_name": "Robert Johnson",
+    "prediction": 0,
+    "risk_percentage": 21.5,
+    "confidence": 0.81,
+    "age": 52,
+    "max_heart_rate": 188,
+    "cholesterol": 175
+  },
+  {
+    "timestamp": "2026-04-14T11:00:00",
+    "patient_id": "P003",
+    "patient_name": "Robert Johnson",
+    "prediction": 0,
+    "risk_percentage": 19.8,
+    "confidence": 0.8,
+    "age": 52,
+    "max_heart_rate": 190,
+    "cholesterol": 170
+  },
+  {
+    "timestamp": "2026-04-09T13:15:00",
+    "patient_id": "P004",
+    "patient_name": "Sarah Williams",
+    "prediction": 1,
+    "risk_percentage": 81.2,
+    "confidence": 0.87,
+    "age": 65,
+    "max_heart_rate": 108,
+    "cholesterol": 310
+  },
+  {
+    "timestamp": "2026-04-14T14:00:00",
+    "patient_id": "P004",
+    "patient_name": "Sarah Williams",
+    "prediction": 1,
+    "risk_percentage": 79.5,
+    "confidence": 0.86,
+    "age": 65,
+    "max_heart_rate": 112,
+    "cholesterol": 305
+  },
+  {
+    "timestamp": "2026-04-12T09:45:00",
+    "patient_id": "P005",
+    "patient_name": "David Lee",
+    "prediction": 0,
+    "risk_percentage": 35.6,
+    "confidence": 0.73,
+    "age": 55,
+    "max_heart_rate": 170,
+    "cholesterol": 210
+  },
+  {
+    "timestamp": "2026-04-15T14:26:04.963623",
+    "patient_id": "P006",
+    "patient_name": "Alex",
+    "prediction": 0,
+    "risk_percentage": 22.326927556282453,
+    "confidence": 0.7767307244371755,
+    "age": 68,
+    "max_heart_rate": 150,
+    "cholesterol": 240
+  },
+  {
+    "timestamp": "2026-04-15T14:27:54.953500",
+    "patient_id": "P006",
+    "patient_name": "Alex",
+    "prediction": 1,
+    "risk_percentage": 56.92239872269462,
+    "confidence": 0.5692239872269462,
+    "age": 55,
+    "max_heart_rate": 175,
+    "cholesterol": 240
+  }
+]

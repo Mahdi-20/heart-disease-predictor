@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Streamlit prediction app
+  streamlit:
+    build: .
+    container_name: heart-disease-predictor
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+    command: streamlit run app.py
+    networks:
+      - heart-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Dash model dashboard
+  dashboard:
+    build: .
+    container_name: heart-disease-dashboard
+    ports:
+      - "8050:8050"
+    command: python dashboard.py
+    networks:
+      - heart-network
+    depends_on:
+      - streamlit
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  heart-network:
+    driver: bridge
