@@ -112,7 +112,7 @@ st.markdown("<h1 class='main-header'>❤️ Heart Disease Risk Predictor</h1>", 
 st.markdown("**AI-powered prediction using clinical features** | Original Cleveland Dataset (303 patients)")
 
 # Create tabs for navigation
-tab1, tab2 = st.tabs(["🔮 Make Prediction", "📊 Patient History & Trends"])
+tab1, tab2, tab3 = st.tabs(["🔮 Make Prediction", "📊 Patient History & Trends", "ℹ️ About Project"])
 
 # ============================================================================
 # PATIENT HISTORY MANAGEMENT
@@ -614,3 +614,174 @@ with tab2:
                 st.write("💡 **Tip**: Make more predictions for this patient to track trends over time!")
     else:
         st.info("No predictions saved yet. Save a prediction above to start tracking!")
+
+# ============================================================================
+# TAB 3 - ABOUT PROJECT
+# ============================================================================
+
+with tab3:
+    st.markdown("<h2 style='text-align: center; color: #065A82;'>📚 About This Project</h2>", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # Project Overview
+    st.markdown("## 📋 Project Overview")
+    st.markdown("""
+    This is an **Advanced Machine Learning & Data Analytics** project that demonstrates the application
+    of machine learning techniques to predict heart disease risk based on clinical features.
+
+    The project showcases:
+    - ✅ ML model development and evaluation
+    - ✅ Interactive web application deployment
+    - ✅ Data visualization and analysis
+    - ✅ Model explainability (SHAP)
+    - ✅ Patient history tracking and trend analysis
+    """)
+
+    st.markdown("---")
+
+    # Course Information
+    st.markdown("## 🎓 Course Information")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.info("""
+        ### Course
+        **Advanced ML & Data Analytics**
+        """)
+
+    with col2:
+        st.info("""
+        ### Institution
+        **Nexa-land**
+        """)
+
+    with col3:
+        st.info("""
+        ### Professor
+        **Prof. Hamed Mamani**
+
+        University of Washington
+        """)
+
+    st.markdown("---")
+
+    # Author Information
+    st.markdown("## 👨‍💻 Author")
+    st.markdown("""
+    **Mahdi** (@mahdi-20)
+
+    GitHub: [github.com/mahdi-20](https://github.com/mahdi-20)
+    """)
+
+    st.markdown("---")
+
+    # Technologies Used
+    st.markdown("## 🛠️ Technologies & Libraries")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+        ### Machine Learning
+        - **Scikit-Learn** - ML algorithms
+        - **SVM** - Support Vector Machine
+        - **Random Forest** - Ensemble methods
+        - **Cross-Validation** - Model evaluation
+        - **SHAP** - Model explainability
+        """)
+
+    with col2:
+        st.markdown("""
+        ### Web & Data
+        - **Streamlit** - Web app framework
+        - **Plotly** - Interactive visualizations
+        - **Pandas** - Data manipulation
+        - **NumPy** - Numerical computing
+        - **Matplotlib/Seaborn** - Static plots
+        """)
+
+    st.markdown("---")
+
+    # Dataset Information
+    st.markdown("## 📊 Dataset")
+    st.markdown("""
+    - **Source:** Cleveland Heart Disease Dataset
+    - **Samples:** 303 patients
+    - **Features:** 13 clinical measurements
+    - **Target:** Binary classification (presence/absence of heart disease)
+    - **Train/Test Split:** Stratified k-fold cross-validation
+    """)
+
+    st.markdown("---")
+
+    # Model Performance
+    st.markdown("## 📈 Model Performance")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.metric("Algorithm", "SVM", "Linear Kernel")
+
+    with col2:
+        st.metric("Test Accuracy", "80.3%", "±2.3%")
+
+    with col3:
+        st.metric("ROC-AUC", "0.947", "High")
+
+    with col4:
+        st.metric("Recall", "88%", "Disease Detection")
+
+    st.markdown("---")
+
+    # Features
+    st.markdown("## ✨ Application Features")
+    st.markdown("""
+    1. **🔮 Real-time Predictions** - Enter patient data and get instant risk predictions
+    2. **📊 Risk Visualization** - Interactive charts and gauges showing disease risk
+    3. **💓 Patient History** - Save and track multiple patient predictions over time
+    4. **📈 Trend Analysis** - Analyze how patient risk changes with multiple predictions
+    5. **🔬 SHAP Explainability** - Understand which features most influence predictions
+    6. **👥 Patient ID Support** - Distinguish between patients with similar names
+    7. **🎯 Confidence Scores** - See model confidence for each prediction
+    8. **📱 Responsive Design** - Works on desktop and mobile devices
+    """)
+
+    st.markdown("---")
+
+    # Source Code
+    st.markdown("## 📂 Source Code")
+    st.markdown("""
+    Full project source code available on GitHub:
+
+    [![GitHub](https://img.shields.io/badge/GitHub-View%20Repository-black?logo=github&style=for-the-badge)](https://github.com/mahdi-20/heart-disease-predictor)
+
+    **Repository includes:**
+    - `app.py` - Standard version
+    - `app_with_retraining.py` - Advanced version with model retraining
+    - `Heart_disease_cleveland_new.csv` - Dataset
+    - `requirements.txt` - Dependencies
+    - Complete documentation
+    """)
+
+    st.markdown("---")
+
+    # Disclaimer
+    st.warning("""
+    ### ⚠️ Important Disclaimer
+
+    This application is for **educational purposes only** and should not be used for clinical diagnosis.
+    Always consult with qualified healthcare professionals for medical advice and diagnosis.
+
+    The model is trained on historical data and predictions are estimates only.
+    """)
+
+    st.markdown("---")
+
+    # Footer
+    st.markdown("""
+    <div style='text-align: center; color: #666; font-size: 0.9em; margin-top: 30px;'>
+        <p>❤️ Built with Python, Machine Learning, and Streamlit</p>
+        <p>Advanced ML & Data Analytics Course | Nexa-land | Prof. Hamed Mamani, University of Washington</p>
+    </div>
+    """, unsafe_allow_html=True)
