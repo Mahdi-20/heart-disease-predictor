@@ -446,7 +446,7 @@ with tab1:
     st.markdown("---")
 
     # Information sections
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         with st.expander("ℹ️ About This Model"):
@@ -469,6 +469,27 @@ with tab1:
                 - Always consult healthcare professionals
                 - Model trained on 1980s data
                 - Predictions are estimates only
+                """)
+
+    with col3:
+        with st.expander("📂 Source Code"):
+            st.markdown("""
+                ### GitHub Repository
+
+                View the complete source code on GitHub:
+
+                [![GitHub](https://img.shields.io/badge/GitHub-View%20Repo-black?logo=github)](https://github.com/mahdi-20/heart-disease-predictor)
+
+                **Features:**
+                - ML model training
+                - Streamlit web app
+                - Patient history tracking
+                - Risk analysis
+                - SHAP explainability
+
+                ### Two App Versions:
+                - **app.py** - Standard version
+                - **app_with_retraining.py** - With model retraining
                 """)
 
 # ============================================================================
