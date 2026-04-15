@@ -561,13 +561,14 @@ with tab2:
             st.dataframe(patient_display_df, use_container_width=True, hide_index=True)
 
         else:
-            st.info(f"⏳ {patient_selection} only has {len(patient_history_data)} prediction(s). Need at least 2 to show trend.")
-
-            # Still show patient info even if only 1 prediction
             if len(patient_history_data) > 0:
-                st.markdown("### Patient Information")
+                st.markdown("### 📊 Single Prediction - Need More Data for Trends")
+                st.info(f"✅ {selected_name} (ID: {selected_id}) has **{len(patient_history_data)} prediction** on record. Save at least **2 predictions** to see trend analysis and risk patterns!")
+
                 latest_record = patient_history_data.iloc[-1]
 
+                # Show single prediction with metrics
+                st.markdown("### Patient Information (Latest Prediction)")
                 col1, col2, col3, col4 = st.columns(4)
                 with col1:
                     st.metric("Age", f"{int(latest_record['age'])} years")
@@ -578,5 +579,17 @@ with tab2:
                 with col4:
                     prediction_status = "🔴 Disease" if latest_record['prediction'] == 1 else "🟢 No Disease"
                     st.metric("Status", prediction_status)
+
+                # Show the single prediction details
+                st.markdown("### Prediction Details")
+                col1, col2 = st.columns(2)
+                with col1:
+                    risk_color = "🔴" if latest_record['prediction'] == 1 else "🟢"
+                    st.metric("Risk Percentage", f"{latest_record['risk_percentage']:.1f}%")
+                with col2:
+                    st.metric("Confidence", f"{latest_record['confidence']*100:.1f}%")
+
+                st.write(f"**Prediction Date**: {latest_record['timestamp']}")
+                st.write("💡 **Tip**: Make more predictions for this patient to track trends over time!")
     else:
         st.info("No predictions saved yet. Save a prediction above to start tracking!")
