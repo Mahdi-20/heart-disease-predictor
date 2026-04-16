@@ -747,7 +747,7 @@ with tab3:
     # Dataset Information
     st.markdown("## 📊 Dataset")
     st.markdown("""
-    - **Source:** [Cleveland Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+    - **Source:** [Cleveland Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
     - **Samples:** 303 patients
     - **Features:** 13 clinical measurements
     - **Target:** Binary classification (presence/absence of heart disease)
