@@ -627,15 +627,42 @@ with tab3:
     # Project Overview
     st.markdown("## 📋 Project Overview")
     st.markdown("""
-    This is an **Advanced Machine Learning & Data Analytics** project that demonstrates the application
-    of machine learning techniques to predict heart disease risk based on clinical features.
+    **Objective:** Predict heart disease risk using supervised machine learning classification with clinical features.
 
-    The project showcases:
-    - ✅ ML model development and evaluation
-    - ✅ Interactive web application deployment
-    - ✅ Data visualization and analysis
-    - ✅ Model explainability (SHAP)
-    - ✅ Patient history tracking and trend analysis
+    **Machine Learning Problem:**
+    - **Type:** Binary Classification (Disease Present/Absent)
+    - **Dataset:** Cleveland Heart Disease (303 patients, 13 clinical features)
+    - **Features:** Age, Sex, Chest Pain Type, Blood Pressure, Cholesterol, Blood Sugar, ECG, Max Heart Rate, Exercise Induced Angina, ST Depression, ST Slope, Vessel Count, Thalassemia
+
+    **Machine Learning Approaches Explored:**
+    - **SVM (Support Vector Machine)** - Linear Kernel classifier
+    - **Random Forest** - Ensemble decision tree method
+    - **Logistic Regression** - Baseline statistical model
+    - **Linear Discriminant Analysis (LDA)** - Dimensionality reduction classifier
+
+    **Model Evaluation & Selection:**
+    - **Methodology:** Stratified 5-fold & 10-fold Cross-Validation
+    - **Metrics:** Accuracy, ROC-AUC, Recall, Precision, F1-Score
+    - **Key Finding:** SVM achieved 80.3% test accuracy with 0.947 ROC-AUC score
+    - **Data Leakage Analysis:** Identified 70.5% duplicate records in original dataset, demonstrating vulnerability of tree-based models to memorization
+
+    **Model Deployment & Productionization:**
+    - **Framework:** Streamlit for interactive web application
+    - **Deployment Platform:** Streamlit Cloud for live, shareable predictions
+    - **Real-time Inference:** Instant risk predictions with clinical feature inputs
+    - **Model Interpretability:** SHAP explainability layer shows which features influence predictions
+    - **Data Persistence:** Patient history tracking with trend analysis capabilities
+    - **Advanced Feature (Optional):** Model retraining with new patient data for continuous improvement
+
+    **Deep Learning Consideration:**
+    - Foundation laid for future neural network implementations
+    - Current ML models provide strong baseline for comparison with deep learning approaches
+
+    **Key Insights:**
+    - SVM shows better generalization than Random Forest despite similar cross-validation scores
+    - Clinical features provide sufficient discriminative power for disease prediction
+    - Model explainability (SHAP) reveals which features most influence predictions
+    - Successful transition from research model to production-ready web application
     """)
 
     st.markdown("---")
@@ -659,7 +686,7 @@ with tab3:
     with col3:
         st.info("""
         ### Professor
-        **Prof. Hamed Mamani**
+        **[Prof. Hamed Mamani](https://foster.uw.edu/faculty-research/directory/hamed-mamani/)**
 
         University of Washington
         """)
@@ -720,7 +747,7 @@ with tab3:
     # Dataset Information
     st.markdown("## 📊 Dataset")
     st.markdown("""
-    - **Source:** Cleveland Heart Disease Dataset
+    - **Source:** [Cleveland Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
     - **Samples:** 303 patients
     - **Features:** 13 clinical measurements
     - **Target:** Binary classification (presence/absence of heart disease)
