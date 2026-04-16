@@ -669,7 +669,7 @@ with tab3:
     # Author Information
     st.markdown("## 👨‍💻 Author")
     st.markdown("""
-    **Mahdi** (@mahdi-20)
+    **Mahdi Bakhtiari** (@mahdi-20)
 
     GitHub: [github.com/mahdi-20](https://github.com/mahdi-20)
     """)
@@ -683,22 +683,36 @@ with tab3:
 
     with col1:
         st.markdown("""
-        ### Machine Learning
-        - **Scikit-Learn** - ML algorithms
-        - **SVM** - Support Vector Machine
-        - **Random Forest** - Ensemble methods
-        - **Cross-Validation** - Model evaluation
-        - **SHAP** - Model explainability
+        ### Python ML Stack
+        - **NumPy** - Numerical computing & arrays
+        - **Pandas** - Data manipulation & analysis
+        - **Scikit-Learn** - ML algorithms & preprocessing
+        - **Matplotlib/Seaborn** - Data visualization
+        - **Plotly** - Interactive visualizations
+
+        ### ML Model Development
+        - **SVM** - Support Vector Machine (Linear Kernel)
+        - **Random Forest** - Ensemble classification
+        - **Logistic Regression** - Baseline model
+        - **Model Training & Evaluation**
+        - **Cross-Validation** - 5-fold & 10-fold CV
         """)
 
     with col2:
         st.markdown("""
-        ### Web & Data
-        - **Streamlit** - Web app framework
-        - **Plotly** - Interactive visualizations
-        - **Pandas** - Data manipulation
-        - **NumPy** - Numerical computing
-        - **Matplotlib/Seaborn** - Static plots
+        ### ML Techniques & Concepts
+        - **Preprocessing** - Feature scaling & normalization
+        - **Feature Engineering** - Clinical feature selection
+        - **Exploratory Data Analysis (EDA)** - Statistical analysis
+        - **Classification Models** - Binary disease prediction
+        - **Regression Concepts** - Model relationships
+        - **Evaluation Metrics** - Accuracy, ROC-AUC, Recall, Precision
+
+        ### Model Interpretability & Deployment
+        - **SHAP** - Feature importance analysis
+        - **Streamlit** - Interactive web framework
+        - **Model Explainability** - Understanding predictions
+        - **Interactive Visualizations** - Real-time insights
         """)
 
     st.markdown("---")
@@ -737,14 +751,19 @@ with tab3:
     # Features
     st.markdown("## ✨ Application Features")
     st.markdown("""
-    1. **🔮 Real-time Predictions** - Enter patient data and get instant risk predictions
-    2. **📊 Risk Visualization** - Interactive charts and gauges showing disease risk
-    3. **💓 Patient History** - Save and track multiple patient predictions over time
-    4. **📈 Trend Analysis** - Analyze how patient risk changes with multiple predictions
-    5. **🔬 SHAP Explainability** - Understand which features most influence predictions
-    6. **👥 Patient ID Support** - Distinguish between patients with similar names
-    7. **🎯 Confidence Scores** - See model confidence for each prediction
-    8. **📱 Responsive Design** - Works on desktop and mobile devices
+    ✅ **Interactive Web Application Deployment** - Real-time predictions with Streamlit framework
+
+    ✅ **Data Visualization and Analysis** - Interactive charts, gauges, and trend analysis
+
+    ✅ **Model Explainability (SHAP)** - Understand which features most influence predictions
+
+    ✅ **Patient History Tracking and Trend Analysis** - Save, compare, and analyze multiple predictions over time
+
+    **Additional Features:**
+    - 🔮 Real-time Predictions with clinical feature inputs
+    - 👥 Patient ID Support for distinguishing similar patients
+    - 🎯 Confidence Scores for each prediction
+    - 📱 Responsive Design for desktop and mobile devices
     """)
 
     st.markdown("---")
